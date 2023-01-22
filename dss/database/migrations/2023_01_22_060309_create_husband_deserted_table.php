@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('widow', function (Blueprint $table) {
+        Schema::create('husband_deserted', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->integer('age');
@@ -28,8 +28,7 @@ return new class extends Migration
             $table->string('depended_on');
             $table->string('depends_on_her');
             $table->string('working_ability');
-            $table->date('date_of_being_widowed');
-            $table->integer('number_of_remarriage');
+            $table->date('date_of_being_deserted');
             $table->string('health_status');
         });
     }
@@ -41,6 +40,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('widow');
+        Schema::dropIfExists('husband_deserted');
     }
 };
