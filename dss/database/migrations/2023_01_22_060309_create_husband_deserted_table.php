@@ -20,16 +20,16 @@ return new class extends Migration
             $table->date('enrolled_date');
             $table->string('educational_qualification');
             $table->string('occupation');
-            $table->string('interest/skill/special_skill');
+            $table->integer('interest/skill/special_skill');
             $table->integer('monthly_income');
             $table->string('income_source');
             $table->integer('job_experience');
-            $table->string('type_of_wealth');
-            $table->string('depended_on');
-            $table->string('depends_on_her');
-            $table->string('working_ability');
+            $table->integer('type_of_wealth');
+            $table->integer('depended_on');
+            $table->integer('depends_on_her');
+            $table->integer('working_ability');
             $table->date('date_of_being_deserted');
-            $table->string('health_status');
+            $table->integer('health_status');
         });
     }
 

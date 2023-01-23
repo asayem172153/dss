@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('health_status', function (Blueprint $table) {
             $table->id();
             $table->string('problem_name');
-            $table->integer('min_treatment_duration');
+            $table->integer('min_treatment_duration_(days)');
         });
     }
 

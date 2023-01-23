@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('training_name');
             $table->date('training_date');
             $table->integer('no_of_trainee_perticipated');
-            $table->string('training_type');
+            $table->integer('training_type');
             $table->string('address');
             $table->integer('upazila_id');
         });

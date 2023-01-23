@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('awareness', function (Blueprint $table) {
             $table->id();
             $table->date('date');
-            $table->string('awareness_type');
+            $table->integer('awareness_type');
             $table->integer('perticipated');
             $table->string('address');
             $table->integer('upazila_id');

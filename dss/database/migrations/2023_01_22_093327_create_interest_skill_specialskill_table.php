@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('interest_skill_specialskill', function (Blueprint $table) {
             $table->id();
             $table->string('skill_name');
-            $table->integer('min_time_needs_to_achive_this_skill');
+            $table->integer('min_time_needs_to_achive_this_skill_(days)');
             $table->string('is_training_available');
         });
     }

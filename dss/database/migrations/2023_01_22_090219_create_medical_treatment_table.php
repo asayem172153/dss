@@ -19,7 +19,7 @@ return new class extends Migration
             $table->integer('medical_expences');
             $table->string('is_it_expensive');
             $table->string('medical_support_type');
-            $table->integer('treatment_duration');
+            $table->integer('treatment_duration_(days)');
         });
     }
 
